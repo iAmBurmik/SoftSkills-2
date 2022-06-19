@@ -1,0 +1,20 @@
+int main()
+{
+    int size, pos;
+
+    string *pstr;
+
+    char S = '.';
+
+    cout << "Enter number of strings: "; cin >> size;
+
+    cin.ignore();
+
+    pstr = new string [size];
+
+    for(int i = 0; i < size; ++i)
+    {
+        cout << "\nString #" << i + 1 << ": ";
+        getline(cin, pstr[i]);
+    }
+}
